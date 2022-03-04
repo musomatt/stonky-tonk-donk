@@ -1,25 +1,23 @@
 <html>
   <head>
-    <style type="text/css">
-      body {
-        background-color: #b5bfa1;
-      }
-
-      h1 {
-        color: burlywood;
-      }
-      #morse-code {
-        padding-bottom: 20px;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="donk.css" />
   </head>
   <body>
-    <h1>Stonky Tonk Donk</h1>
-    <div id="morse-code">Donk to start tonking</div>
-    <div id="letter-code">&nbsp;</div>
-    <button id="dot">.</button>
-    <button id="dash">-</button>
-    <button id="space">space</button>
+    <div class="wrapper">
+      <div id="morse-code"><span>donk to start tonking</span></div>
+      <div id="letter-output">&nbsp;</div>
+      <div class="buttons">
+        <div class="button" id="dot"><img src="images/dots.png" /></div>
+        <div class="button" id="dash"><img src="images/dashes.png" /></div>
+        <div class="button" id="space"><img src="images/space.png" /></div>
+      </div>
+      <div
+        class="search"
+        onclick="javascript:window.location='did-you-mean.html';"
+      >
+        Search
+      </div>
+    </div>
     <script type="text/javascript" src="stonky-tonk-donk.js"></script>
   </body>
 </html>

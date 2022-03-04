@@ -55,8 +55,7 @@ const dash = getElement('dash');
 const space = getElement('space');
 
 const morseCodeInput = getElement('morse-code');
-
-const letterCodeOutput = getElement('letter-code');
+const letterOutput = getElement('letter-output');
 
 dot.addEventListener('click', function () {
   addInput('.');
@@ -69,5 +68,5 @@ dash.addEventListener('click', function () {
 space.addEventListener('click', function () {
   lookUpCode(userInput);
   userInput = '';
-  letterCodeOutput.innerHTML = searchTerm;
+  letterOutput.innerHTML = searchTerm;
 });

@@ -1,0 +1,138 @@
+body {
+  font-family: 'TT Commons';
+  display: flex;
+  place-items: center;
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+#morse-code {
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 64px;
+  color: #fff;
+}
+
+#morse-code span {
+  font-size: 32px;
+  line-height: 72px;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 414px;
+  height: 896px;
+  margin: auto;
+  background-color: #b5bfa1;
+  color: #fff;
+}
+
+div.buttons {
+  display: flex;
+}
+
+div.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #eaceda 0%, #e788b2 100%);
+  border-bottom: 7px solid #cd6b96;
+  margin-left: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+div.button img {
+  transform: scale(50%);
+}
+
+div.button#space img {
+  transform: scale(50%) translateY(3px);
+}
+
+div.button:active {
+  border-bottom: none;
+  transform: translateY(7px);
+}
+
+div.button:first-child {
+  margin-left: 0px;
+}
+
+div.search,
+div.next {
+  align-self: end;
+  color: #fff;
+  font-size: 24px;
+  padding: 18px 24px;
+  width: 100px;
+  border-radius: 30px;
+  border-bottom: 7px solid #4f6d61;
+  background: url('images/arrow.svg') #6e9887;
+  background-repeat: no-repeat;
+  background-position: 110px center;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+div.next {
+  width: 70%;
+  background: #6e9887;
+  text-align: center;
+  cursor: pointer;
+}
+
+div.search:active,
+div.next:active {
+  border-bottom: 0px;
+}
+
+div.hamish {
+  width: 200px;
+  height: 200px;
+  background-image: url(images/hamish.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: translateX(-80px);
+}
+
+div.bubble {
+  position: absolute;
+  top: 200px;
+  left: 120px;
+  max-width: 250px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  border-bottom-left-radius: 8px;
+  color: #6e9887;
+  z-index: 150;
+  word-wrap: break-word;
+}
+
+div.bubble h3 {
+  font-size: 27px;
+  font-weight: normal;
+}
+
+div.difficulties {
+  font-weight: bold;
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+}
+
+div#letter-output {
+  font-size: 30px;
+  font-weight: bold;
+}
