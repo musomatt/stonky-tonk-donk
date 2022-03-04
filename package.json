@@ -1,0 +1,22 @@
+{
+  "name": "stonky-tonk-donk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stonky-tonk-donk.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musomatt/stonky-tonk-donk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/musomatt/stonky-tonk-donk/issues"
+  },
+  "homepage": "https://github.com/musomatt/stonky-tonk-donk#readme",
+  "dependencies": {
+    "serve": "^13.0.2"
+  }
+}
